@@ -1,6 +1,9 @@
 <template>
 <div >
     <div class="wrap">
+         <div class='name'>Check All  
+             <input class='check' type="checkbox" id="checkbox" v-model="checked" /></div>
+         
       <div class="card" v-for="user in users.data" :key="user.id">
           <img src="../assets/user.jpg" v-bind:alt="user.name"/>
           <input class='check' type="checkbox" id="checkbox" v-model="checked" />
