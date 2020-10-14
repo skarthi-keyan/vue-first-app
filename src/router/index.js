@@ -7,6 +7,7 @@ import Grid from './../components/Grid.vue';
 import CodeConverter from './../components/CodeConverter.vue';
 import CompositiveApi from './../components/CompositiveApi.vue';
 import FetchUser from './../components/FetchUser.vue';
+import DemoPage from './../components/DemoPage.vue';
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: "/fetchUser",
     name: "FetchUser",
     component: FetchUser,
+  },
+  {
+    path: "/demoPage",
+    name: "DemoPage",
+    component: DemoPage,
   },
   {
     path: "/:catchAll(.*)",

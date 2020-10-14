@@ -5,7 +5,7 @@
              <input class='check' type="checkbox" id="checkbox" v-model="checked" /></div>
          
       <div class="card" v-for="user in users.data" :key="user.id">
-          <img src="../assets/user.jpg" v-bind:alt="user.name"/>
+          <img class="user" src="../assets/user.jpg" v-bind:alt="user.name"/>
           <input class='check' type="checkbox" id="checkbox" v-model="checked" />
           <div class='name'>Name : {{user.name}}</div>
          <div class='name'>Email : {{user.email}}</div>
@@ -37,7 +37,7 @@ export default {
     margin: auto;
     margin-top: 100px;
 }
-img{
+img.user{
      width: 80px;
     height: 75px;
 }
